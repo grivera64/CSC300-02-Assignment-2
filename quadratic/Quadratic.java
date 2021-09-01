@@ -184,18 +184,19 @@ public class Quadratic
 		{
 			
 			return String.format("%dx %s %d", 
-										this.b, 
-										this.printSign(this.c), Math.abs(this.c));
+									this.b, 
+									this.printSign(this.c), Math.abs(this.c)
+								). replace("1", "");
 		
 		}	
-		else 
+		else
 		{
 			
 			return String.format("%dx^2 %s %dx %s %d",
 									this.a, 
 									this.printSign(this.b), Math.abs(this.b),
 									this.printSign(this.c), Math.abs(this.c)
-								 );
+								 ).replace("1", "");
 								
 		}
 		
