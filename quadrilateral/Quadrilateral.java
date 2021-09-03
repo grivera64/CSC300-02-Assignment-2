@@ -1,7 +1,8 @@
 public class Quadrilateral
 {
 
-       Point point1, point2, point3, point4;
+       private Point point1, point2, point3, point4;
+       
        public Quadrilateral(
                                    double x1, double y1,
                                    double x2, double y2,
@@ -61,7 +62,7 @@ public class Quadrilateral
        public String toString()
        {
        
-              return this.returnCoordsAsString();
+              return String.format("Coordinates of quadrilateral are %s ", this.returnCoordsAsString();
        
        }
 

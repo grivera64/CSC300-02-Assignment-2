@@ -19,17 +19,29 @@ public class Trapezoid extends Quadrilateral
     {
     
         double height = 0;
+        
+        if (getPoint1().getY() == getPoint2().getY())
+        {
+        
+            this.height = Math.abs(getPoint1().getY() - getPoint3().getY());
+        
+        }
+        else
+        {
+        
+            this.height = Math.abs(getPoint1().getY() - getPoint2().getY());
+        
+        }
     
-        this.height = height;
-        return height;
+        return this.height;
     
     }
     
+    /* Area of Trapezoid = 0.5 * (b1 + b2) * h */
     public double getArea()
     {
     
-        double area = 0;
-        return area;
+        return 0.5 * this.getSumOfTwoSides() * this.getHeight();
     
     }
     
@@ -47,6 +59,23 @@ public class Trapezoid extends Quadrilateral
                 Math.abs(getPoint4().getX() - getPoint1().getX());
         }
 
+    
+    }
+    
+    //@Override
+    public String toString()
+    {
+    
+        StringBuilder toStringMsg = new StringBuilder();
+        
+        toStringMsg.append("Coordinates of trapezoid are ");
+        toStringMsg.append(this.returnCoordsAsString());
+        toStringMsg.append("\nHeight is: ");
+        toStringMsg.append(this.getHeight());
+        toStringMsg.append(": Area is ");
+        toStringMsg.append(this.getArea());
+        
+        return toStringMsg.toString();
     
     }
 
