@@ -28,7 +28,7 @@ public class Point
     public double getX()
     {
     
-        return this.xCoordinate();
+        return this.xCoordinate;
     
     }
     
