@@ -45,6 +45,7 @@ public class Parallelogram extends Trapezoid
               toStringMsg.append(this.getHeight());
               toStringMsg.append(" Area is: ");
               toStringMsg.append(this.getArea());
+              toStringMsg.append("\n");
               
               return toStringMsg.toString();
        

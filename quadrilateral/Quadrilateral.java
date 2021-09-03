@@ -62,7 +62,7 @@ public class Quadrilateral
        public String toString()
        {
        
-              return String.format("Coordinates of quadrilateral are %s ", this.returnCoordsAsString());
+              return String.format("Coordinates of quadrilateral are %s\n", this.returnCoordsAsString());
        
        }
 
