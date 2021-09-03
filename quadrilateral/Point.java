@@ -6,8 +6,8 @@ public class Point
     public Point(double xCoordinate, double yCoordinate)
     {
     
-        this.setXCoordinate(xCoordinate);
-        this.setYCoordinate(yCoordinate);
+        this.setX(xCoordinate);
+        this.setY(yCoordinate);
     
     }
     
