@@ -179,33 +179,14 @@ public class Quadratic
 	//@Override
 	public String toString()
 	{
-	
-		if (a == 0) 
-		{
-			
-			return String.format("%dx %s %d", 
-									this.b, 
-									this.printSign(this.c), Math.abs(this.c)
-								). replace("1", "");
 		
-		}	
-		else
-		{
-			
-			return String.format("%dx^2 %s %dx %s %d",
-									this.a, 
-									this.printSign(this.b), Math.abs(this.b),
-									this.printSign(this.c), Math.abs(this.c)
-								 ).replace("1", "");
-								
-		}
+		StringBuilder equation = new StringBuilder();
 		
-	}
-	
-	private String printSign(int num)
-	{
-	
-		return num >= 0 ? "+" : "-";
+		if (this.getA() != 0) equation.append(String.format("%dx^2 + ", this.getA()));
+		if (this.getB() != 0) equation.append(String.format("%dx + ", this.getB()));
+		if (this.getC() != 0) equation.append(String.format("%d + ", this.getC()));		
+		
+		return equation.substring(0, equation.length() - 3).replace("+ -", "- ").replace("1", "");
 		
 	}
 
