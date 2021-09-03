@@ -16,16 +16,22 @@ public class Parallelogram extends Trapezoid
        // return width of parallelogram
        public double getWidth()
        {
-              if (getPoint1().getY() == getPoint2().getY())
+              if (this.getPoint1().getY() == this.getPoint2().getY())
               {
               
-                     return Math.abs(getPoint1().getX() - getPoint2().getX());
+                     return Math.abs(this.getPoint1().getX() - this.getPoint2().getX());
+              
+              }
+              else (this.getPoint2().getY() == this.getPoint3().getY())
+              {
+                     
+                     return Math.abs(this.getPoint2().getX() - this.getPoint3().getX());
               
               }
               else
               {
-                     
-                     return Math.abs(getPoint2().getX() - getPoint3().getX());
+              
+                     return Math.abs(this.getPoint2().getX() - this.getPoint4().getX());
               
               }
               

@@ -53,7 +53,7 @@ public class Trapezoid extends Quadrilateral
             return Math.abs(getPoint1().getX() - getPoint2().getX()) + 
                 Math.abs(getPoint3().getX() - getPoint4().getX());
         }
-        else
+        else if (this.getPoint1().getY() == this.getPoint3().getY())
         {
              return Math.abs(getPoint2().getX() - getPoint3().getX()) +
                 Math.abs(getPoint4().getX() - getPoint1().getX());
