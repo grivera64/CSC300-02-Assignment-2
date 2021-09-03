@@ -11,28 +11,28 @@ public class Point
     
     }
     
-    public void setXCoordinate(double xCoordinate)
+    public void setX(double xCoordinate)
     {
     
         this.xCoordinate = xCoordinate;
     
     }
     
-    public void setYCoordinate(double yCoordinate)
+    public void setY(double yCoordinate)
     {
     
         this.yCoordinate = yCoordinate;
     
     }
     
-    public double getXCoordinate()
+    public double getX()
     {
     
         return this.xCoordinate();
     
     }
     
-    public double getYCoordinate()
+    public double getY()
     {
     
         return this.yCoordinate;
@@ -45,8 +45,8 @@ public class Point
     
         return String.format(
                                 "(%f,%f)",
-                                this.getXCoordinate(),  
-                                this.getYCoordinate()
+                                this.getX(),  
+                                this.getY()
                             );
     
     }
