@@ -22,9 +22,9 @@ public class Square extends Parallelogram
                toStringMsg.append("Coordinates of square are ");
                toStringMsg.append(this.returnCoordsAsString());
                toStringMsg.append("\nSide is ");
-               toStringMsg.append(this.getWidth());
+               toStringMsg.append(String.format("%.2f", this.getWidth()));
                toStringMsg.append(" Area is: ");
-               toStringMsg.append(this.getArea());
+               toStringMsg.append(String.format("%.2f", this.getArea()));
                toStringMsg.append("\n");
                
                return toStringMsg.toString();

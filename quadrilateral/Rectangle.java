@@ -22,11 +22,11 @@ public class Rectangle extends Parallelogram
         toStringMsg.append("Coordinates of Rectangle are ");
         toStringMsg.append(this.returnCoordsAsString());
         toStringMsg.append("\nWidth is ");
-        toStringMsg.append(this.getWidth());
+        toStringMsg.append(String.format("%.2f",this.getWidth()));
         toStringMsg.append(" Height is ");
-        toStringMsg.append(this.getHeight());
+        toStringMsg.append(String.format("%.2f",this.getHeight()));
         toStringMsg.append(" Area is: ");
-        toStringMsg.append(this.getArea());
+        toStringMsg.append(String.format("%.2f",this.getArea()));
         toStringMsg.append("\n");
         
         return toStringMsg.toString();

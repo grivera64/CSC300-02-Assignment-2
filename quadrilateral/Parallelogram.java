@@ -40,11 +40,11 @@ public class Parallelogram extends Trapezoid
               toStringMsg.append("Coordinates of parallelogram are ");
               toStringMsg.append(this.returnCoordsAsString());
               toStringMsg.append("\nWidth is ");
-              toStringMsg.append(this.getWidth());
+              toStringMsg.append(String.format("%.2f",this.getWidth()));
               toStringMsg.append(" Height is ");
-              toStringMsg.append(this.getHeight());
+              toStringMsg.append(String.format("%.2f",this.getHeight()));
               toStringMsg.append(" Area is: ");
-              toStringMsg.append(this.getArea());
+              toStringMsg.append(String.format("%.2f",this.getArea()));
               toStringMsg.append("\n");
               
               return toStringMsg.toString();

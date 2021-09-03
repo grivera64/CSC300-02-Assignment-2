@@ -44,7 +44,7 @@ public class Point
     {
     
         return String.format(
-                                "(%f,%f)",
+                                "(%.2f,%.2f)",
                                 this.getX(),  
                                 this.getY()
                             );

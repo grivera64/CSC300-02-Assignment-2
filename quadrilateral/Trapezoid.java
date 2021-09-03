@@ -71,9 +71,9 @@ public class Trapezoid extends Quadrilateral
         toStringMsg.append("Coordinates of trapezoid are ");
         toStringMsg.append(this.returnCoordsAsString());
         toStringMsg.append("\nHeight is: ");
-        toStringMsg.append(this.getHeight());
+        toStringMsg.append(String.format("%.2f", this.getHeight()));
         toStringMsg.append(": Area is ");
-        toStringMsg.append(this.getArea());
+        toStringMsg.append(String.format("%.2f", this.getArea()));
         toStringMsg.append("\n");
         
         return toStringMsg.toString();
