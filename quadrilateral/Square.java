@@ -24,7 +24,7 @@ public class Square extends Parallelogram
                toStringMsg.append("\nSide is ");
                toStringMsg.append(this.getWidth());
                toStringMsg.append(" Area is: ");
-               toStingMsg.append(this.getArea());
+               toStringMsg.append(this.getArea());
                
                return toStringMsg.toString();
           
