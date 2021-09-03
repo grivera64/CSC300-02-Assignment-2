@@ -22,16 +22,10 @@ public class Parallelogram extends Trapezoid
                      return Math.abs(this.getPoint1().getX() - this.getPoint2().getX());
               
               }
-              else if (this.getPoint2().getY() == this.getPoint3().getY())
+              else
               {
                      
                      return Math.abs(this.getPoint2().getX() - this.getPoint3().getX());
-              
-              }
-              else
-              {
-              
-                     return Math.abs(this.getPoint2().getX() - this.getPoint4().getX());
               
               }
               
