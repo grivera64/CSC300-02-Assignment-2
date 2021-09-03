@@ -11,9 +11,9 @@ public class Quadrilateral
        {
        
               this.point1 = new Point(x1, y1);
-              this.point2 = new Point(x2, x2);
-              this.point3 = new Point(x3, x3);
-              this.point4 = new Point(x4, x4);
+              this.point2 = new Point(x2, y2);
+              this.point3 = new Point(x3, y3);
+              this.point4 = new Point(x4, y4);
               
        }
        
