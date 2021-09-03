@@ -53,7 +53,7 @@ public class Quadrilateral
                                           this.getPoint1(),
                                           this.getPoint2(),
                                           this.getPoint3(),
-                                          this.getPoint4(),
+                                          this.getPoint4()
                                    );
        
        }
