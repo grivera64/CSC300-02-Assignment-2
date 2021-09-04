@@ -186,7 +186,7 @@ public class Quadratic
 		if (this.getB() != 0) equation.append(String.format("%dx + ", this.getB()));
 		if (this.getC() != 0) equation.append(String.format("%d + ", this.getC()));		
 		
-		return equation.substring(0, equation.length() - 3).replace("+ -", "- ").replace("1", "");
+		return equation.substring(0, equation.length() - 3).replace("+ -", "- ").replace("1x", "");
 		
 	}
 
