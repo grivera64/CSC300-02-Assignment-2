@@ -182,11 +182,11 @@ public class Quadratic
 		
 		StringBuilder equation = new StringBuilder();
 		
-		if (this.getA() != 0) equation.append(String.format("%dx^2 + ", this.getA()));
-		if (this.getB() != 0) equation.append(String.format("%dx + ", this.getB()));
-		if (this.getC() != 0) equation.append(String.format("%d + ", this.getC()));		
+		if (this.getA() != 0) equation.append(String.format("%+dx^2 + ", this.getA()));
+		if (this.getB() != 0) equation.append(String.format("%+dx + ", this.getB()));
+		if (this.getC() != 0) equation.append(String.format("%+d", this.getC()));		
 		
-		return equation.substring(0, equation.length() - 3).replace("+ -", "- ").replace("1x", "");
+		return equation.toString().replace("-1x", "-x").replace("+1x", "x").replace("+ -", "- ").replace("+ +", "+ ");
 		
 	}
 
