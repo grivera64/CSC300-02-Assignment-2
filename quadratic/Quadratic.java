@@ -184,7 +184,9 @@ public class Quadratic
 		
 		if (this.getA() != 0) equation.append(String.format("%+dx^2 + ", this.getA()));
 		if (this.getB() != 0) equation.append(String.format("%+dx + ", this.getB()));
-		if (this.getC() != 0) equation.append(String.format("%+d", this.getC()));		
+		if (this.getC() != 0) equation.append(String.format("%+d", this.getC()));
+		
+		equation.append(" = 0");
 		
 		return equation.toString().replace("-1x", "-x").replace("+1x", "x").replace("+ -", "- ").replace("+ +", "+ ");
 		
