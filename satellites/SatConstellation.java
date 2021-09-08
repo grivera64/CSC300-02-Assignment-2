@@ -54,6 +54,15 @@ public class SatConstellation
 		fileName = keyboard.nextLine();
 		
 		File file = new File(fileName);
+		
+		if (!file.exists())
+		{
+		
+			System.out.println("File is empty!");
+			return;
+		
+		}
+		
 		Scanner inFile = new Scanner(file);
 		
 		Satellite tempSatellite;
