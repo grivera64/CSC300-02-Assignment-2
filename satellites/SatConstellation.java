@@ -59,7 +59,7 @@ public class SatConstellation
 		{
 		
 			System.out.println("File is empty!");
-			return;
+			System.exit(0);
 		
 		}
 		
